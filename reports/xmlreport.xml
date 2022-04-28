@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="30.994151">
+<testcase classname="Signin feature" name="Verify that user is able to create new coupon and delete once it got created." time="30.994151">
+<system-out><![CDATA[Given User navigated to the Login page......................................passed
+When Enter Username "admin" and password "Admin@123"........................passed
+Then Home page should be displayed..........................................passed
+Given User is on coupon create page.........................................passed
+When Enter Coupon name "TestCoupon41" and Code "141"........................passed
+And Coupon should be created................................................passed
+And Select the created coupon and delete from the list......................passed
+]]></system-out>
+</testcase>
+</testsuite>

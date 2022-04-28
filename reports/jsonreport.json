@@ -1,0 +1,164 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Open the browser and land on the create coupon page.",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 223600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigated to the Login page",
+            "match": {
+              "location": "stepdefinationclass.user_navigated_to_the_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7157880100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter Username \"admin\" and password \"Admin@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Admin@123\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinationclass.enter_Username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8909800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Home page should be displayed",
+            "match": {
+              "location": "stepdefinationclass.error_message_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1104935500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on coupon create page",
+            "match": {
+              "location": "stepdefinationclass.couponpage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-28T15:25:09.005Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12264865700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksclass.Launchurl()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify that user is able to create new coupon and delete once it got created.",
+        "description": "",
+        "id": "signin-feature;verify-that-user-is-able-to-create-new-coupon-and-delete-once-it-got-created.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1359056600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksclass.appclose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2282595300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Enter Coupon name \"TestCoupon41\" and Code \"141\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TestCoupon41\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"141\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinationclass.enter_CouponDetails(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 126000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Coupon should be created",
+            "match": {
+              "location": "stepdefinationclass.SuccessCoupon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6812908900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Select the created coupon and delete from the list",
+            "match": {
+              "location": "stepdefinationclass.DeleteCoupon()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Signin feature",
+    "description": "  I want to signin into my portal. Create the new coupon in the portal\n  and delete the created coupon.",
+    "id": "signin-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/signin.feature",
+    "tags": []
+  }
+]
